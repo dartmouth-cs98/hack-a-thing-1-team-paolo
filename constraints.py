@@ -44,9 +44,6 @@ def add_feasibility_constraints(model, players, b=True):
 	pf_constraint = pulp.LpAffineExpression(pf)
 	c_constraint = pulp.LpAffineExpression(c)
 
-	g_constraint = pulp.LpAffineExpression(g)
-	f_constraint = pulp.LpAffineExpression(f)
-
 	model += objective_function
 
 	if b:
