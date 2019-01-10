@@ -8,7 +8,7 @@ BUDGET = 50000
 decision_vars = []
 
 # adds lineups constraints to model
-def add_feasibility_constraints(model, players, to_max, b=True):
+def add_feasibility_constraints(model, players, b=True):
 	total_points = {}
 	cost = {}
 	number_of_players = {}
